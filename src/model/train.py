@@ -34,7 +34,7 @@ def get_csvs_df(path):
     return pd.concat((pd.read_csv(f) for f in csv_files), sort=False)
 
 
-def split_data(df, test_size=0.2):
+def split_data(df, test_size=0.30):
     return train_test_split(X, y, test_size=test_size, random_state=0)
     
 
