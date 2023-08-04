@@ -2,6 +2,8 @@ name: Experiment/Production Job
 
 on:
   push:
+    paths:
+      - src/model/**
     branches:
       - main
 
