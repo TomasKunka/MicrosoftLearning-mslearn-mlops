@@ -23,7 +23,7 @@ jobs:
         subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
     - name: Deploy Azure Machine Learning Model
       run: >-
-        az ml online-deployment update
+        az ml online-deployment create
         --file src/mlflow-deployment.yml
         --resource-group ${{ vars.RESOURCE_GROUP }}
         --workspace-name ${{ vars.WORKSPACE_NAME }}
